@@ -2,11 +2,11 @@ import React from 'react';
 import Nav from './Nav';
 
 function Layouts({
-  children, home, skill, about, options,
+  children, home, portfolio, skill, about, options,
 }) {
   return (
     <>
-      <Nav home={home} skill={skill} about={about} options={options} />
+      <Nav home={home} portfolio={portfolio} skill={skill} about={about} options={options} />
       <main className="from-slate-900 to-stone-900 bg-gradient-to-r py-4 sm:py-8 md:py-14 lg:py-20">
         {children}
       </main>

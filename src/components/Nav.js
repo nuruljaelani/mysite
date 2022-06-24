@@ -6,7 +6,7 @@ import {
 import { Link } from 'gatsby';
 
 function Nav({
-  home, skill, about, options,
+  home, portfolio, skill, about, options,
 }) {
   return (
     <nav className="from-slate-900 to-stone-900 bg-gradient-to-r px-4 lg:px-2" ref={home}>
@@ -17,6 +17,7 @@ function Nav({
         <div className="flex flex-col md:basis-1/2 basis-full space-y-8">
           <div className="flex text-white justify-between py-2 md:py-4">
             <button type="button" onClick={() => home.current.scrollIntoView(options)}>Home</button>
+            <button type="button" onClick={() => portfolio.current.scrollIntoView(options)}>Portfolio</button>
             <button type="button" onClick={() => skill.current.scrollIntoView(options)}>Skills</button>
             <button type="button" onClick={() => about.current.scrollIntoView(options)}>About</button>
             <StaticImage src="../images/nj2.svg" alt="" className="w-14 h-auto" />
