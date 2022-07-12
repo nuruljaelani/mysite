@@ -45,6 +45,23 @@ function Portfolio({ portfolio }) {
                   <p className="text-white font-semibold text-base sm:text-lg md:text-xl">Toko Buku Online</p>
                 </div>
               </div>
+              <div className="flex flex-col space-y-4 w-auto">
+                <Link to="https://lapakkita.herokuapp.com" target="_blank">
+                  <StaticImage src="../images/lapakkita1.png" alt="" className="rounded-[1.5rem] md:rounded-[2.5rem] drop-shadow-lg shadow-current shadow-md" />
+                </Link>
+                <div className="flex flex-col space-y-2">
+                  <div className="flex space-x-2 items-center">
+                    <div className="bg-sky-500 p-1 rounded-md text-white text-xs w-fit">Fullstack</div>
+                    <Link to="https://github.com/nuruljaelani/lapakita" target="_blank">
+                      <div className="flex items-center space-x-1">
+                        <AiFillGithub className="text-white" />
+                        <p className="text-xs text-white">Repository</p>
+                      </div>
+                    </Link>
+                  </div>
+                  <p className="text-white font-semibold text-base sm:text-lg md:text-xl">Toko Online / Marketplace</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
