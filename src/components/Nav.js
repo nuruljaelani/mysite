@@ -3,8 +3,8 @@ import { StaticImage } from 'gatsby-plugin-image';
 import {
   AiFillGithub,
   AiFillLinkedin,
-  AiFillInstagram,
   AiFillDribbbleCircle,
+  AiFillMail,
 } from 'react-icons/ai';
 import { Link } from 'gatsby';
 
@@ -68,7 +68,7 @@ function Nav({
             </p>
           </div>
           <Link
-            to="https://drive.google.com/file/d/1VbxVR1Swj1uEubJ1BWBviOMOEHvP3Vmd/view?usp=sharing"
+            to="https://drive.google.com/file/d/1lvkmzPu9cz1JpxZm5cnggmd3gcQP_bax/view?usp=sharing"
             target="_blank"
           >
             <button
@@ -79,6 +79,9 @@ function Nav({
             </button>
           </Link>
           <div className="space-x-2 md:space-x-3 flex">
+            <Link to="mailto:nuruljaelani96@gmail.com" target="_blank">
+              <AiFillMail className="text-white text-3xl" />
+            </Link>
             <Link to="https://github.com/nuruljaelani" target="_blank">
               <AiFillGithub className="text-white text-3xl" />
             </Link>
