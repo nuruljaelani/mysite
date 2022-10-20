@@ -11,9 +11,9 @@ function Portfolio({ portfolio }) {
           <div className="flex flex-col h-fit py-4 md:py-10 space-y-4 sm:space-y-6 md:space-y-8 lg:space-y-12 px-4 md:px-6">
             <p className="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold underline decoration-2 underline-offset-8 text-center">Portfolio</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8 h-full">
-              <div className="flex flex-col space-y-4 w-auto">
+              <div className="flex flex-col space-y-4">
                 <Link to="https://aula-admin.vercel.app" target="_blank">
-                  <StaticImage src="../images/aula-admin.png" alt="" className="rounded-[1.5rem] md:rounded-[2.5rem] drop-shadow-lg shadow-current shadow-md" />
+                  <StaticImage src="../images/aula-admin.png" alt="" className="rounded-[1.5rem] md:rounded-[2.5rem] drop-shadow-lg shadow-current shadow-md h-40 lg:h-48" />
                 </Link>
                 <div className="flex flex-col space-y-2">
                   <div className="flex space-x-2 items-center">
@@ -28,9 +28,9 @@ function Portfolio({ portfolio }) {
                   <p className="text-white font-semibold text-base md:text-lg">Template Admin Reactjs</p>
                 </div>
               </div>
-              <div className="flex flex-col space-y-4 w-auto">
+              <div className="flex flex-col space-y-4">
                 <Link to="https://bukukita.vercel.app" target="_blank">
-                  <StaticImage src="../images/bukukita.png" alt="" className="rounded-[1.5rem] md:rounded-[2.5rem] drop-shadow-lg shadow-current shadow-md" />
+                  <StaticImage src="../images/bukukita.png" alt="" className="rounded-[1.5rem] md:rounded-[2.5rem] drop-shadow-lg shadow-current shadow-md h-40 lg:h-48" />
                 </Link>
                 <div className="flex flex-col space-y-2">
                   <div className="flex space-x-2 items-center">
@@ -45,9 +45,9 @@ function Portfolio({ portfolio }) {
                   <p className="text-white font-semibold text-base md:text-lg">Toko Buku Online</p>
                 </div>
               </div>
-              <div className="flex flex-col space-y-4 w-auto">
+              <div className="flex flex-col space-y-4">
                 <Link to="https://lapakkita.herokuapp.com" target="_blank">
-                  <StaticImage src="../images/lapakkita1.png" alt="" className="rounded-[1.5rem] md:rounded-[2.5rem] drop-shadow-lg shadow-current shadow-md" />
+                  <StaticImage src="../images/lapakkita1.png" alt="" className="rounded-[1.5rem] md:rounded-[2.5rem] drop-shadow-lg shadow-current shadow-md h-40 lg:h-48" />
                 </Link>
                 <div className="flex flex-col space-y-2">
                   <div className="flex space-x-2 items-center">
@@ -60,6 +60,40 @@ function Portfolio({ portfolio }) {
                     </Link>
                   </div>
                   <p className="text-white font-semibold text-base md:text-lg">Toko Online / Marketplace</p>
+                </div>
+              </div>
+              <div className="flex flex-col space-y-4 h-fit">
+                <Link to="https://incovid19.vercel.app" target="_blank">
+                  <StaticImage src="../images/Incovid.png" alt="" className="rounded-[1.5rem] md:rounded-[2.5rem] drop-shadow-lg shadow-current shadow-md h-40 lg:h-48" />
+                </Link>
+                <div className="flex flex-col space-y-2">
+                  <div className="flex space-x-2 items-center">
+                    <div className="bg-sky-500 p-1 rounded-md text-white text-xs w-fit">Frontend</div>
+                    <Link to="https://github.com/nuruljaelani/incovid" target="_blank">
+                      <div className="flex items-center space-x-1">
+                        <AiFillGithub className="text-white" />
+                        <p className="text-xs text-white">Repository</p>
+                      </div>
+                    </Link>
+                  </div>
+                  <p className="text-white font-semibold text-base md:text-lg">Portal Informasi Covid 19</p>
+                </div>
+              </div>
+              <div className="flex flex-col space-y-4 h-fit">
+                <Link to="https://toko-ikan.vercel.app" target="_blank">
+                  <StaticImage src="../images/toko-ikan.png" alt="" className="rounded-[1.5rem] md:rounded-[2.5rem] drop-shadow-lg shadow-current shadow-md h-40 lg:h-48" />
+                </Link>
+                <div className="flex flex-col space-y-2">
+                  <div className="flex space-x-2 items-center">
+                    <div className="bg-sky-500 p-1 rounded-md text-white text-xs w-fit">Frontend</div>
+                    <Link to="https://github.com/nuruljaelani/slicing-figma" target="_blank">
+                      <div className="flex items-center space-x-1">
+                        <AiFillGithub className="text-white" />
+                        <p className="text-xs text-white">Repository</p>
+                      </div>
+                    </Link>
+                  </div>
+                  <p className="text-white font-semibold text-base md:text-lg">Landing Page Toko Ikan</p>
                 </div>
               </div>
             </div>
