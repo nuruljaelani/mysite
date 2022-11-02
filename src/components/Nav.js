@@ -36,7 +36,7 @@ function Nav({
               type="button"
               onClick={() => portfolio.current.scrollIntoView(options)}
             >
-              Portfolio
+              Code
             </button>
             <button
               type="button"
