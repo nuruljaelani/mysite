@@ -124,6 +124,25 @@ function Slide() {
             </div>
           </div>
         </SplideSlide>
+        <SplideSlide>
+          <div className="flex flex-col space-y-4 h-fit">
+            <Link to="https://toko-ikan.vercel.app" target="_blank">
+              <StaticImage src="../images/chat-app.png" alt="" className="rounded-[1.5rem] md:rounded-2xl drop-shadow-lg shadow-current shadow-md h-40 lg:h-48" />
+            </Link>
+            <div className="flex flex-col space-y-2">
+              <div className="flex space-x-2 items-center">
+                <div className="bg-sky-500 p-1 rounded-md text-white text-xs w-fit">Fullstack</div>
+                <Link to="https://github.com/nuruljaelani/chat-app" target="_blank">
+                  <div className="flex items-center space-x-1">
+                    <AiFillGithub className="text-white" />
+                    <p className="text-xs text-white">Repository</p>
+                  </div>
+                </Link>
+              </div>
+              <p className="text-white font-semibold text-base md:text-lg">Realtime Chat App</p>
+            </div>
+          </div>
+        </SplideSlide>
       </Splide>
     </div>
   );
