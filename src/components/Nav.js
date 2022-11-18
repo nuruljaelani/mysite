@@ -73,23 +73,23 @@ function Nav({
           >
             <button
               type="button"
-              className="bg-stone-200 rounded-3xl text-stone-800 w-1/3 shadow-md drop-shadow-md font-semibold p-2"
+              className="bg-stone-200 rounded-3xl text-stone-800 w-fit text-sm lg:text-base shadow-md drop-shadow-md font-semibold py-2 px-4"
             >
               Download CV
             </button>
           </Link>
-          <div className="space-x-2 md:space-x-3 flex">
+          <div className="gap-2 flex">
             <Link to="mailto:nuruljaelani96@gmail.com" target="_blank">
-              <AiFillMail className="text-white text-3xl" />
+              <AiFillMail className="text-white text-3xl w-6 md:w-10" />
             </Link>
             <Link to="https://github.com/nuruljaelani" target="_blank">
-              <AiFillGithub className="text-white text-3xl" />
+              <AiFillGithub className="text-white text-3xl w-6 md:w-10" />
             </Link>
             <Link to="https://linkedin.com/in/nurul-jaelani" target="_blank">
-              <AiFillLinkedin className="text-white text-3xl" />
+              <AiFillLinkedin className="text-white text-3xl w-6 md:w-10" />
             </Link>
             <Link to="https://dribbble.com/nuruljaelani" target="_blank">
-              <AiFillDribbbleCircle className="text-white text-3xl" />
+              <AiFillDribbbleCircle className="text-white text-3xl w-6 md:w-10" />
             </Link>
           </div>
         </div>

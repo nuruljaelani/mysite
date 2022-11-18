@@ -17,11 +17,11 @@ function Slide() {
         gap: 20,
       },
       768: {
-        perPage: 3,
+        perPage: 2,
         gap: 20,
       },
       1024: {
-        perPage: 4,
+        perPage: 3,
         gap: 30,
       },
     },
