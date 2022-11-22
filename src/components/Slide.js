@@ -51,7 +51,7 @@ function Slide() {
         <SplideSlide>
           <div className="flex flex-col space-y-4">
             <Link to="https://bukukita.vercel.app" target="_blank">
-              <StaticImage src="../images/bukukita.png" alt="" className="rounded-[1.5rem] md:rounded-2xl drop-shadow-lg shadow-current shadow-md h-40 lg:h-48" />
+              <StaticImage src="../images/bukuid.png" alt="" className="rounded-[1.5rem] md:rounded-2xl drop-shadow-lg shadow-current shadow-md h-40 lg:h-48" />
             </Link>
             <div className="flex flex-col space-y-2">
               <div className="flex space-x-2 items-center">
@@ -70,7 +70,7 @@ function Slide() {
         <SplideSlide>
           <div className="flex flex-col space-y-4">
             <Link to="https://lapakkita.herokuapp.com" target="_blank">
-              <StaticImage src="../images/lapakkita1.png" alt="" className="rounded-[1.5rem] md:rounded-2xl drop-shadow-lg shadow-current shadow-md h-40 lg:h-48" />
+              <StaticImage src="../images/lapakita3.png" alt="" className="rounded-[1.5rem] md:rounded-2xl drop-shadow-lg shadow-current shadow-md h-40 lg:h-48" />
             </Link>
             <div className="flex flex-col space-y-2">
               <div className="flex space-x-2 items-center">
@@ -126,7 +126,7 @@ function Slide() {
         </SplideSlide>
         <SplideSlide>
           <div className="flex flex-col space-y-4 h-fit">
-            <Link to="https://toko-ikan.vercel.app" target="_blank">
+            <Link to="https://github.com/nuruljaelani/chat-app" target="_blank">
               <StaticImage src="../images/chat-app.png" alt="" className="rounded-[1.5rem] md:rounded-2xl drop-shadow-lg shadow-current shadow-md h-40 lg:h-48" />
             </Link>
             <div className="flex flex-col space-y-2">
@@ -140,6 +140,19 @@ function Slide() {
                 </Link>
               </div>
               <p className="text-white font-semibold text-base md:text-lg">Realtime Chat App</p>
+            </div>
+          </div>
+        </SplideSlide>
+        <SplideSlide>
+          <div className="flex flex-col space-y-4 h-fit">
+            <Link to="https://eduskilss.vercel.app/" target="_blank">
+              <StaticImage src="../images/eduskills.png" alt="" className="rounded-[1.5rem] md:rounded-2xl drop-shadow-lg shadow-current shadow-md h-40 lg:h-48" />
+            </Link>
+            <div className="flex flex-col space-y-2">
+              <div className="flex space-x-2 items-center">
+                <div className="bg-sky-500 p-1 rounded-md text-white text-xs w-fit">Frontend</div>
+              </div>
+              <p className="text-white font-semibold text-base md:text-lg">Online courses platform</p>
             </div>
           </div>
         </SplideSlide>
