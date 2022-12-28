@@ -6,7 +6,6 @@ import {
   AiFillDribbbleCircle,
   AiFillMail,
 } from 'react-icons/ai';
-import { Link } from 'gatsby';
 
 function Nav({
   home, portfolio, skill, about, options,
@@ -67,9 +66,10 @@ function Nav({
               Fullstack web developer with 1year experience.
             </p>
           </div>
-          <Link
-            to="https://drive.google.com/file/d/1lvkmzPu9cz1JpxZm5cnggmd3gcQP_bax/view?usp=sharing"
+          <a
+            href="https://drive.google.com/file/d/1lvkmzPu9cz1JpxZm5cnggmd3gcQP_bax/view?usp=sharing"
             target="_blank"
+            rel="noreferrer"
           >
             <button
               type="button"
@@ -77,20 +77,20 @@ function Nav({
             >
               Download CV
             </button>
-          </Link>
+          </a>
           <div className="gap-2 flex">
-            <Link to="mailto:nuruljaelani96@gmail.com" target="_blank">
+            <a href="mailto:nuruljaelani96@gmail.com" target="_blank" rel="noreferrer">
               <AiFillMail className="text-white text-3xl w-6 md:w-10" />
-            </Link>
-            <Link to="https://github.com/nuruljaelani" target="_blank">
+            </a>
+            <a href="https://github.com/nuruljaelani" target="_blank" rel="noreferrer">
               <AiFillGithub className="text-white text-3xl w-6 md:w-10" />
-            </Link>
-            <Link to="https://linkedin.com/in/nurul-jaelani" target="_blank">
+            </a>
+            <a href="https://linkedin.com/in/nurul-jaelani" target="_blank" rel="noreferrer">
               <AiFillLinkedin className="text-white text-3xl w-6 md:w-10" />
-            </Link>
-            <Link to="https://dribbble.com/nuruljaelani" target="_blank">
+            </a>
+            <a href="https://dribbble.com/nuruljaelani" target="_blank" rel="noreferrer">
               <AiFillDribbbleCircle className="text-white text-3xl w-6 md:w-10" />
-            </Link>
+            </a>
           </div>
         </div>
       </div>

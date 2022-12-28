@@ -1,15 +1,16 @@
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
-import { Link } from 'gatsby';
-import { AiFillGithub } from 'react-icons/ai';
 
-function Slide() {
+function Slide(props) {
+  const {
+    setReactAdmin, setBukuId, setIncovid, setTokoIkan, setChatApp, setEduskill,
+  } = props;
+
   const options = {
     perPage: 1,
     perMove: 1,
     pagination: true,
-    type: 'loop',
     mediaQuery: 'min',
     breakpoints: {
       640: {
@@ -30,106 +31,78 @@ function Slide() {
     <div>
       <Splide aria-label="My Favorite Images" options={options}>
         <SplideSlide>
-          <div className="flex flex-col space-y-4">
-            <Link to="https://aula-admin.vercel.app" target="_blank">
-              <StaticImage src="../images/aula-admin.png" alt="" className="rounded-[1.5rem] md:rounded-2xl drop-shadow-lg shadow-current shadow-md h-40 lg:h-48" />
-            </Link>
+          <button type="button" className="flex flex-col space-y-4 cursor-pointer" onClick={setReactAdmin}>
+            <StaticImage
+              src="../images/aula-admin.png"
+              alt=""
+              className="rounded-[1.5rem] md:rounded-2xl drop-shadow-lg shadow-current shadow-md h-40 lg:h-48"
+            />
             <div className="flex flex-col space-y-2">
-              <div className="flex space-x-2 items-center">
-                <div className="bg-sky-500 p-1 rounded-md text-white text-xs w-fit">Frontend</div>
-                <Link to="https://github.com/nuruljaelani/aula-admin" target="_blank">
-                  <div className="flex items-center space-x-1">
-                    <AiFillGithub className="text-white" />
-                    <p className="text-xs text-white">Repository</p>
-                  </div>
-                </Link>
-              </div>
-              <p className="text-white font-semibold text-base md:text-lg">Template Admin Reactjs</p>
+              <p className="text-white font-semibold text-base md:text-lg">
+                Template Admin Reactjs
+              </p>
             </div>
-          </div>
+          </button>
         </SplideSlide>
         <SplideSlide>
-          <div className="flex flex-col space-y-4">
-            <Link to="https://buku-id.vercel.app" target="_blank">
-              <StaticImage src="../images/bukuid.png" alt="" className="rounded-[1.5rem] md:rounded-2xl drop-shadow-lg shadow-current shadow-md h-40 lg:h-48" />
-            </Link>
-            <div className="flex flex-col space-y-2">
-              <div className="flex space-x-2 items-center">
-                <div className="bg-sky-500 p-1 rounded-md text-white text-xs w-fit">Frontend</div>
-              </div>
-              <p className="text-white font-semibold text-base md:text-lg">Toko Buku Online</p>
-            </div>
-          </div>
+          <button type="button" className="flex flex-col space-y-4" onClick={setBukuId}>
+            <StaticImage
+              src="../images/bukuid.png"
+              alt=""
+              className="rounded-[1.5rem] md:rounded-2xl drop-shadow-lg shadow-current shadow-md h-40 lg:h-48"
+            />
+            <p className="text-white font-semibold text-base md:text-lg">
+              Toko Buku Online
+            </p>
+          </button>
         </SplideSlide>
         <SplideSlide>
-          <div className="flex flex-col space-y-4 h-fit">
-            <Link to="https://incovid19.vercel.app" target="_blank">
-              <StaticImage src="../images/Incovid.png" alt="" className="rounded-[1.5rem] md:rounded-2xl drop-shadow-lg shadow-current shadow-md h-40 lg:h-48" />
-            </Link>
-            <div className="flex flex-col space-y-2">
-              <div className="flex space-x-2 items-center">
-                <div className="bg-sky-500 p-1 rounded-md text-white text-xs w-fit">Frontend</div>
-                <Link to="https://github.com/nuruljaelani/incovid" target="_blank">
-                  <div className="flex items-center space-x-1">
-                    <AiFillGithub className="text-white" />
-                    <p className="text-xs text-white">Repository</p>
-                  </div>
-                </Link>
-              </div>
-              <p className="text-white font-semibold text-base md:text-lg">Portal Informasi Covid 19</p>
-            </div>
-          </div>
+          <button type="button" onClick={setIncovid} className="flex flex-col space-y-4 h-fit">
+            <StaticImage
+              src="../images/Incovid.png"
+              alt=""
+              className="rounded-[1.5rem] md:rounded-2xl drop-shadow-lg shadow-current shadow-md h-40 lg:h-48"
+            />
+            <p className="text-white font-semibold text-base md:text-lg">
+              Portal Informasi Covid 19
+            </p>
+          </button>
         </SplideSlide>
         <SplideSlide>
-          <div className="flex flex-col space-y-4 h-fit">
-            <Link to="https://toko-ikan.vercel.app" target="_blank">
-              <StaticImage src="../images/toko-ikan.png" alt="" className="rounded-[1.5rem] md:rounded-2xl drop-shadow-lg shadow-current shadow-md h-40 lg:h-48" />
-            </Link>
-            <div className="flex flex-col space-y-2">
-              <div className="flex space-x-2 items-center">
-                <div className="bg-sky-500 p-1 rounded-md text-white text-xs w-fit">Frontend</div>
-                <Link to="https://github.com/nuruljaelani/slicing-figma" target="_blank">
-                  <div className="flex items-center space-x-1">
-                    <AiFillGithub className="text-white" />
-                    <p className="text-xs text-white">Repository</p>
-                  </div>
-                </Link>
-              </div>
-              <p className="text-white font-semibold text-base md:text-lg">Landing Page Toko Ikan</p>
-            </div>
-          </div>
+          <button type="button" onClick={setTokoIkan} className="flex flex-col space-y-4 h-fit">
+            <StaticImage
+              src="../images/toko-ikan.png"
+              alt=""
+              className="rounded-[1.5rem] md:rounded-2xl drop-shadow-lg shadow-current shadow-md h-40 lg:h-48"
+            />
+            <p className="text-white font-semibold text-base md:text-lg">
+              Landing Page Toko Ikan
+            </p>
+          </button>
         </SplideSlide>
         <SplideSlide>
-          <div className="flex flex-col space-y-4 h-fit">
-            <Link to="https://github.com/nuruljaelani/chat-app" target="_blank">
-              <StaticImage src="../images/chat-app.png" alt="" className="rounded-[1.5rem] md:rounded-2xl drop-shadow-lg shadow-current shadow-md h-40 lg:h-48" />
-            </Link>
-            <div className="flex flex-col space-y-2">
-              <div className="flex space-x-2 items-center">
-                <div className="bg-sky-500 p-1 rounded-md text-white text-xs w-fit">Fullstack</div>
-                <Link to="https://github.com/nuruljaelani/chat-app" target="_blank">
-                  <div className="flex items-center space-x-1">
-                    <AiFillGithub className="text-white" />
-                    <p className="text-xs text-white">Repository</p>
-                  </div>
-                </Link>
-              </div>
-              <p className="text-white font-semibold text-base md:text-lg">Realtime Chat App</p>
-            </div>
-          </div>
+          <button type="button" onClick={setChatApp} className="flex flex-col space-y-4 h-fit">
+            <StaticImage
+              src="../images/chat-app.png"
+              alt=""
+              className="rounded-[1.5rem] md:rounded-2xl drop-shadow-lg shadow-current shadow-md h-40 lg:h-48"
+            />
+            <p className="text-white font-semibold text-base md:text-lg">
+              Realtime Chat App
+            </p>
+          </button>
         </SplideSlide>
         <SplideSlide>
-          <div className="flex flex-col space-y-4 h-fit">
-            <Link to="https://eduskilss.vercel.app/" target="_blank">
-              <StaticImage src="../images/eduskills.png" alt="" className="rounded-[1.5rem] md:rounded-2xl drop-shadow-lg shadow-current shadow-md h-40 lg:h-48" />
-            </Link>
-            <div className="flex flex-col space-y-2">
-              <div className="flex space-x-2 items-center">
-                <div className="bg-sky-500 p-1 rounded-md text-white text-xs w-fit">Frontend</div>
-              </div>
-              <p className="text-white font-semibold text-base md:text-lg">Online courses platform</p>
-            </div>
-          </div>
+          <button type="button" onClick={setEduskill} className="flex flex-col space-y-4 h-fit">
+            <StaticImage
+              src="../images/eduskills.png"
+              alt=""
+              className="rounded-[1.5rem] md:rounded-2xl drop-shadow-lg shadow-current shadow-md h-40 lg:h-48"
+            />
+            <p className="text-white font-semibold text-base md:text-lg">
+              Online courses platform
+            </p>
+          </button>
         </SplideSlide>
       </Splide>
     </div>
