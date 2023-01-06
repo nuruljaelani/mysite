@@ -67,7 +67,7 @@ function Nav({
             </p>
           </div>
           <a
-            href="https://drive.google.com/file/d/1lvkmzPu9cz1JpxZm5cnggmd3gcQP_bax/view?usp=sharing"
+            href="https://drive.google.com/file/d/18yGAyQqWWpsqDlszTkgxEAjHmDNaxhZX/view?usp=share_link"
             target="_blank"
             rel="noreferrer"
           >
