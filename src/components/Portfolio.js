@@ -39,11 +39,11 @@ function Portfolio({ portfolio }) {
           />
         </div>
         <div className="flex flex-col gap-4 w-1/2">
-          <p className="text-lg md:text-xl font-semibold text-gray-700">
+          <p className="text-lg md:text-xl font-semibold text-white">
             Template admin React js
           </p>
           <div className="flex flex-col gap-2">
-            <div className="text-gray-600">
+            <div className="text-white">
               Teknologi yang digunakan :
               <p className="font-semibold">
                 React Js, Tailwind Css
@@ -82,11 +82,11 @@ function Portfolio({ portfolio }) {
           />
         </div>
         <div className="flex flex-col gap-4 w-1/2">
-          <p className="text-lg md:text-xl font-semibold text-gray-700">
+          <p className="text-lg md:text-xl font-semibold text-white">
             Portal Informasi Covid 19
           </p>
           <div className="flex flex-col gap-2">
-            <div className="text-gray-600">
+            <div className="text-white">
               Teknologi yang digunakan :
               <p className="font-semibold">
                 Nuxt Js, Tailwind Css
@@ -130,11 +130,11 @@ function Portfolio({ portfolio }) {
           />
         </div>
         <div className="flex flex-col gap-4 w-1/2">
-          <p className="text-lg md:text-xl font-semibold text-gray-700">
+          <p className="text-lg md:text-xl font-semibold text-white">
             Toko Buku Online
           </p>
           <div className="flex flex-col gap-2">
-            <div className="text-gray-600">
+            <div className="text-white">
               Teknologi yang digunakan :
               <p className="font-semibold">
                 Next Js, Redux, Redux Toolkit, Tailwind Css, Express Js, PostgreSql
@@ -160,11 +160,11 @@ function Portfolio({ portfolio }) {
           />
         </div>
         <div className="flex flex-col gap-4 w-1/2">
-          <p className="text-lg md:text-xl font-semibold text-gray-700">
+          <p className="text-lg md:text-xl font-semibold text-white">
             Landing Page Toko Ikan
           </p>
           <div className="flex flex-col gap-2">
-            <div className="text-gray-600">
+            <div className="text-white">
               Teknologi yang digunakan :
               <p className="font-semibold">
                 Next Js, Tailwind Css, Slick Carousel
@@ -202,11 +202,11 @@ function Portfolio({ portfolio }) {
           />
         </div>
         <div className="flex flex-col gap-4 w-1/2">
-          <p className="text-lg md:text-xl font-semibold text-gray-700">
+          <p className="text-lg md:text-xl font-semibold text-white">
             Realtime Chat App
           </p>
           <div className="flex flex-col gap-2">
-            <div className="text-gray-600">
+            <div className="text-white">
               Teknologi yang digunakan :
               <p className="font-semibold">
                 Laravel, Tailwind Css, Laravel Websocket, PostgreSql
@@ -241,11 +241,11 @@ function Portfolio({ portfolio }) {
           />
         </div>
         <div className="flex flex-col gap-4 w-1/2">
-          <p className="text-lg md:text-xl font-semibold text-gray-700">
+          <p className="text-lg md:text-xl font-semibold text-white">
             Landing Page Online Course
           </p>
           <div className="flex flex-col gap-2">
-            <div className="text-gray-600">
+            <div className="text-white">
               Teknologi yang digunakan :
               <p className="font-semibold">
                 Next Js, Tailwind Css

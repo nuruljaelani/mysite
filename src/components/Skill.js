@@ -6,39 +6,39 @@ function Skill({ skill }) {
     <div>
       <div className="mx-auto max-w-5xl py-4" ref={skill}>
         <div className="flex flex-col px-4 md:px-6 py-4 md:py-10 space-y-4 sm:space-y-6 md:space-y-8 lg:space-y-14">
-          <p className="text-white text-xl md:text-2xl lg:text-3xl font-semibold underline decoration-2 underline-offset-8 text-center">Skill</p>
+          <p className="text-white text-xl md:text-2xl lg:text-3xl font-semibold underline decoration-2 underline-offset-8 text-center">Skills</p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4">
             <div className="flex rounded-3xl py-2 px-4 items-center space-x-2">
-              <StaticImage src="../images/javascript.svg" alt="" className="w-6 md:w-10 lg:w-14 h-auto" />
-              <p className="text-yellow-800 text-sm sm:text-base md:text-lg font-semibold">Javascript</p>
-            </div>
-            <div className="flex rounded-3xl py-2 px-4 items-center space-x-2">
               <StaticImage src="../images/php.svg" alt="" className="w-6 md:w-10 lg:w-14 h-auto" />
-              <p className="text-sky-800 text-sm sm:text-base md:text-lg font-semibold">Php</p>
+              <p className="text-sky-600 text-sm sm:text-base md:text-lg font-semibold">Php</p>
             </div>
             <div className="flex rounded-3xl py-2 px-4 items-center space-x-2">
               <StaticImage src="../images/laravel.svg" alt="" className="w-6 md:w-10 lg:w-14 h-auto" />
-              <p className="text-rose-800 text-sm sm:text-base md:text-lg font-semibold">Laravel</p>
+              <p className="text-rose-600 text-sm sm:text-base md:text-lg font-semibold">Laravel</p>
+            </div>
+            <div className="flex rounded-3xl py-2 px-4 items-center space-x-2">
+              <StaticImage src="../images/javascript.svg" alt="" className="w-6 md:w-10 lg:w-14 h-auto" />
+              <p className="text-yellow-500 text-sm sm:text-base md:text-lg font-semibold">Javascript</p>
             </div>
             <div className="flex rounded-3xl py-2 px-4 items-center space-x-2">
               <StaticImage src="../images/nodejs-icon.svg" alt="" className="w-6 md:w-10 lg:w-14 h-auto" />
-              <p className="text-green-800 text-sm sm:text-base md:text-lg font-semibold">Node Js</p>
+              <p className="text-green-600 text-sm sm:text-base md:text-lg font-semibold">Node Js</p>
             </div>
             <div className="flex rounded-3xl py-2 px-4 items-center space-x-2">
               <StaticImage src="../images/vuejs-seeklogo.com.svg" alt="" className="w-6 md:w-10 lg:w-14 h-auto" />
-              <p className="text-emerald-800 text-sm sm:text-base md:text-lg font-semibold">Vue Js</p>
+              <p className="text-emerald-600 text-sm sm:text-base md:text-lg font-semibold">Vue Js</p>
             </div>
             <div className="flex rounded-3xl py-2 px-4 items-center space-x-2">
               <StaticImage src="../images/react.svg" alt="" className="w-6 md:w-10 lg:w-14 h-auto" />
-              <p className="text-cyan-800 text-sm sm:text-base md:text-lg font-semibold">React Js</p>
+              <p className="text-cyan-600 text-sm sm:text-base md:text-lg font-semibold">React Js</p>
             </div>
             <div className="flex rounded-3xl py-2 px-4 items-center space-x-2">
-              <StaticImage src="../images/Go-Logo_Blue.png" alt="" className="w-6 md:w-10 lg:w-14 h-auto" />
-              <p className="text-sky-800 text-sm sm:text-base md:text-lg font-semibold">Golang</p>
+              <StaticImage src="../images/next-js-seeklogo.com.svg" alt="" className="w-6 md:w-10 lg:w-14 h-auto" />
+              <p className="text-white text-sm sm:text-base md:text-lg font-semibold">Next Js</p>
             </div>
             <div className="flex rounded-3xl py-2 px-4 items-center space-x-2">
               <StaticImage src="../images/git-seeklogo.com.svg" alt="" className="w-6 md:w-10 lg:w-14 h-auto" />
-              <p className="text-red-800 text-sm sm:text-base md:text-lg font-semibold">Git</p>
+              <p className="text-red-600 text-sm sm:text-base md:text-lg font-semibold">Git</p>
             </div>
           </div>
         </div>
