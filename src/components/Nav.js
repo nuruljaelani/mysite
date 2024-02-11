@@ -57,6 +57,17 @@ function Nav({
           />
         </div>
         <div className="flex flex-col md:basis-1/2 basis-full gap-6 z-10">
+          <motion.a
+            href="https://instagram.com/aga_jelekk"
+            target="_blank"
+            rel="noreferrer"
+            className="pt-6"
+            initial={{ opacity: 0, scale: 0 }}
+            animate={{ opacity: 1, scale: 1, transition: { duration: 1, delay: 0.6 } }}
+          >
+            {/* <AiFillMail className="text-white text-3xl w-6 md:w-10" /> */}
+            <AiFillInstagram className="text-white text-3xl md:text-4xl" />
+          </motion.a>
           {/* <div className="flex text-white justify-between py-2 md:py-4">
             <button
               type="button"
@@ -110,7 +121,7 @@ function Nav({
               <motion.p className="text-stone-200" variants={variants}>Pekerjaan</motion.p>
             </motion.div>
           </div> */}
-          <div className="flex gap-2 pt-4 md:pt-6 lg:pt-10 w-full">
+          <div className="flex gap-2 w-full">
             <motion.div className="flex flex-col gap-4 text-lg md:text-xl lg:text-2xl font-sans w-full" variants={variants} initial="initial" animate="animate">
               <motion.div className="flex gap-4 md:gap-8 font-semibold italic" variants={variants}>
                 <motion.p variants={variants} className="text-stone-400">Nama</motion.p>
@@ -122,7 +133,7 @@ function Nav({
               </motion.div>
               <motion.div className="flex gap-4 md:gap-8 font-semibold italic" variants={variants}>
                 <motion.p variants={variants} className="text-stone-400">Alamat</motion.p>
-                <motion.p variants={variants} className="text-stone-200">Sedong</motion.p>
+                <motion.p variants={variants} className="text-stone-200">Sedong dan Bandung</motion.p>
               </motion.div>
               <motion.div className="flex gap-4 md:gap-8 font-semibold italic" variants={variants}>
                 <motion.p variants={variants} className="text-stone-400">Pekerjaan</motion.p>
@@ -130,7 +141,7 @@ function Nav({
               </motion.div>
               <motion.div className="flex gap-4 md:gap-8 font-semibold italic" variants={variants}>
                 <motion.p variants={variants} className="text-stone-400">Hobi</motion.p>
-                <motion.p variants={variants} className="text-stone-200">Bulutangkis, Travelling</motion.p>
+                <motion.p variants={variants} className="text-stone-200">Bulutangkis</motion.p>
               </motion.div>
               <motion.div className="flex gap-4 md:gap-8 font-semibold italic" variants={variants}>
                 <motion.p variants={variants} className="text-stone-400">Kegiatan Sekarang</motion.p>
@@ -138,24 +149,23 @@ function Nav({
               </motion.div>
             </motion.div>
           </div>
-          <a
+          {/* <a
             href="https://drive.google.com/file/d/18yGAyQqWWpsqDlszTkgxEAjHmDNaxhZX/view?usp=share_link"
             target="_blank"
             rel="noreferrer"
           >
-            {/* <button
+            <button
               type="button"
               className="bg-stone-200 rounded-3xl text-stone-800 w-fit text-sm lg:text-base shadow-md drop-shadow-md font-semibold py-2 px-4"
             >
               Download CV
-            </button> */}
-          </a>
-          <div className="gap-2 flex">
+            </button>
+          </a> */}
+          {/* <div className="gap-2 flex">
             <a href="https://instagram.com/aga_jelekk" target="_blank" rel="noreferrer">
-              {/* <AiFillMail className="text-white text-3xl w-6 md:w-10" /> */}
               <AiFillInstagram className="text-white text-3xl md:text-4xl" />
             </a>
-            {/* <a href="https://github.com/nuruljaelani" target="_blank" rel="noreferrer">
+            <a href="https://github.com/nuruljaelani" target="_blank" rel="noreferrer">
               <AiFillGithub className="text-white text-3xl w-6 md:w-10" />
             </a>
             <a href="https://linkedin.com/in/nurul-jaelani" target="_blank" rel="noreferrer">
@@ -163,8 +173,8 @@ function Nav({
             </a>
             <a href="https://dribbble.com/nuruljaelani" target="_blank" rel="noreferrer">
               <AiFillDribbbleCircle className="text-white text-3xl w-6 md:w-10" />
-            </a> */}
-          </div>
+            </a>
+          </div> */}
         </div>
       </div>
     </nav>
