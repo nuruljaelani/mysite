@@ -45,11 +45,11 @@ function Nav({
   };
   return (
     <nav
-      className="from-slate-900 to-stone-900 bg-gradient-to-r px-4 lg:px-2"
+      className="from-slate-900 to-stone-900 bg-gradient-to-r px-8 lg:px-2"
       ref={home}
     >
-      <div className="flex flex-col md:flex-row mx-auto max-w-5xl gap-4 md:gap-8 lg:gap-12">
-        <div className="rounded-b-3xl md:block w-full max-w-xs md:max-w-lg mx-auto md:mx-0 z-20">
+      <div className="flex flex-col md:flex-row mx-auto max-w-4xl gap-4 md:gap-8 lg:gap-12">
+        <div className="rounded-b-3xl md:block w-full max-w-xs md:max-w-[22rem] lg:max-w-[25rem] mx-auto md:mx-0 z-20">
           <StaticImage
             src="../images/Nurul Jaelani.jpg"
             alt=""
@@ -111,7 +111,7 @@ function Nav({
             </motion.div>
           </div> */}
           <div className="flex gap-2 pt-4 md:pt-6 lg:pt-10 w-full">
-            <motion.div className="flex flex-col gap-4 text-xl md:text-xl lg:text-2xl font-sans w-full" variants={variants} initial="initial" animate="animate">
+            <motion.div className="flex flex-col gap-4 text-lg md:text-xl lg:text-2xl font-sans w-full" variants={variants} initial="initial" animate="animate">
               <motion.div className="flex gap-4 md:gap-8 font-semibold italic" variants={variants}>
                 <motion.p variants={variants} className="text-stone-400">Nama</motion.p>
                 <motion.p variants={variants} className="text-stone-200">.................</motion.p>
