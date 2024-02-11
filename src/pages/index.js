@@ -18,8 +18,8 @@ function IndexPage() {
   };
   return (
     <Layouts home={home} portfolio={portfolio} skill={skills} about={about} options={options}>
-      <Portfolio portfolio={portfolio} />
-      <Skill skill={skills} />
+      {/* <Portfolio portfolio={portfolio} /> */}
+      {/* <Skill skill={skills} /> */}
       <Profile about={about} />
     </Layouts>
   );
