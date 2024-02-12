@@ -49,11 +49,11 @@ function Nav({
       ref={home}
     >
       <div className="flex flex-col md:flex-row mx-auto max-w-4xl gap-4 md:gap-8 lg:gap-12">
-        <div className="rounded-b-3xl md:block w-full max-w-xs md:max-w-[22rem] lg:max-w-[25rem] mx-auto md:mx-0 z-20">
+        <div className="pt-10 md:pt-0 rounded-full md:rounded-b-3xl md:rounded-t-none md:block w-full max-w-xs md:max-w-[22rem] lg:max-w-[25rem] mx-auto md:mx-0 z-20">
           <StaticImage
             src="../images/Nurul Jaelani.jpg"
             alt=""
-            className="rounded-b-full drop-shadow-md"
+            className="rounded-full md:rounded-b-full drop-shadow-md md:rounded-t-none"
           />
         </div>
         <div className="flex flex-col md:basis-1/2 basis-full gap-6 z-10">
@@ -133,7 +133,7 @@ function Nav({
               </motion.div>
               <motion.div className="flex gap-4 md:gap-8 font-semibold italic" variants={variants}>
                 <motion.p variants={variants} className="text-stone-400">Alamat</motion.p>
-                <motion.p variants={variants} className="text-stone-200">Sedong dan Bandung</motion.p>
+                <motion.p variants={variants} className="text-stone-200">Cirebon dan Bandung</motion.p>
               </motion.div>
               <motion.div className="flex gap-4 md:gap-8 font-semibold italic" variants={variants}>
                 <motion.p variants={variants} className="text-stone-400">Pekerjaan</motion.p>
@@ -141,11 +141,11 @@ function Nav({
               </motion.div>
               <motion.div className="flex gap-4 md:gap-8 font-semibold italic" variants={variants}>
                 <motion.p variants={variants} className="text-stone-400">Hobi</motion.p>
-                <motion.p variants={variants} className="text-stone-200">Bulutangkis</motion.p>
+                <motion.p variants={variants} className="text-stone-200">Coding, Bulutangkis</motion.p>
               </motion.div>
               <motion.div className="flex gap-4 md:gap-8 font-semibold italic" variants={variants}>
                 <motion.p variants={variants} className="text-stone-400">Kegiatan Sekarang</motion.p>
-                <motion.p variants={variants} className="text-stone-200">Kerja, kerja, kerja. Pengen sih mencari calon pendamping hidup.</motion.p>
+                <motion.p variants={variants} className="text-stone-200">Kerja, kerja, kerja.</motion.p>
               </motion.div>
             </motion.div>
           </div>
