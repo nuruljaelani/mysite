@@ -145,7 +145,13 @@ function Nav({
               </motion.div>
               <motion.div className="flex gap-4 md:gap-8 font-semibold italic" variants={variants}>
                 <motion.p variants={variants} className="text-stone-400">Kegiatan Sekarang</motion.p>
-                <motion.p variants={variants} className="text-stone-200">Kerja, kerja, kerja.</motion.p>
+                <motion.p variants={variants} className="text-stone-200">Kerja</motion.p>
+              </motion.div>
+              <motion.div className="flex gap-4 md:gap-8 font-semibold italic" variants={variants}>
+                <motion.p variants={variants} className="text-stone-400">Personality</motion.p>
+                <motion.a variants={variants} className="text-stone-200 text-base" href="https://www.16personalities.com/id/hasil/infj-a/x/jhw1529k8" target="_blank">
+                  <div className="bg-white px-4 py-2 text-stone-800 rounded-2xl">Lihat</div>
+                </motion.a>
               </motion.div>
             </motion.div>
           </div>
