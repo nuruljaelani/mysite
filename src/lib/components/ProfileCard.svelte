@@ -24,7 +24,7 @@
 	onmouseleave={handleMouseLeave}
 	role="region"
 	aria-label="Profile and statement"
-	class="bento-card group flex flex-col justify-between p-7 sm:p-8 min-h-[480px] h-full relative overflow-hidden cursor-default"
+	class="bento-card group flex flex-col justify-between p-5 sm:p-6 min-h-90 xl:min-h-95 h-full relative overflow-hidden cursor-default"
 	style="transform: perspective(1000px) rotateX({tiltX}deg) rotateY({tiltY}deg); transition: transform 0.15s ease-out;"
 >
 	<!-- Card Background Glow on Hover -->
@@ -34,14 +34,14 @@
 	></div>
 
 	<!-- Top Header Text -->
-	<div class="relative z-10 space-y-1">
-		<p class="text-sm font-medium text-neutral-400">I am</p>
-		<h1 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Jay</h1>
+	<div class="relative z-10 space-y-0.5">
+		<p class="text-xs sm:text-sm font-medium text-neutral-400">I am</p>
+		<h1 class="text-xl sm:text-2xl font-bold text-white tracking-tight">Jay</h1>
 	</div>
 
 	<!-- Central Portrait Illustration -->
-	<div class="relative z-10 flex-1 my-3 flex items-center justify-center overflow-hidden rounded-2xl">
-		<div class="relative w-full h-full max-h-[300px] flex items-center justify-center">
+	<div class="relative z-10 flex-1 my-2 flex items-center justify-center overflow-hidden rounded-2xl">
+		<div class="relative w-full h-full max-h-48 sm:max-h-52 flex items-center justify-center">
 			<img
 				src="/images/jay.webp"
 				alt="Portrait of Jay"
@@ -53,8 +53,8 @@
 	</div>
 
 	<!-- Bottom Text Statement -->
-	<div class="relative z-10 pt-2">
-		<p class="text-base sm:text-lg font-medium text-white/90 leading-snug">
+	<div class="relative z-10 pt-1">
+		<p class="text-xs sm:text-sm font-medium text-white/90 leading-snug">
 			I build scalable backend systems, event pipelines, and modern web apps from Cirebon, Indonesia!
 		</p>
 	</div>

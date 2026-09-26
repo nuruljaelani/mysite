@@ -134,7 +134,7 @@
 	}
 </script>
 
-<div class="bento-card flex flex-col justify-between p-7 sm:p-8 min-h-120 h-full relative overflow-hidden group select-none">
+<div class="bento-card flex flex-col justify-between p-5 sm:p-6 min-h-90 xl:min-h-95 h-full relative overflow-hidden group select-none">
 	<!-- Ambient glow backdrop depending on load -->
 	<div
 		class="absolute -top-24 -right-24 w-64 h-64 rounded-full blur-3xl pointer-events-none transition-all duration-700 {isSpikeActive
@@ -151,7 +151,7 @@
 
 		<!-- Status Badge -->
 		<div
-			class="flex items-center gap-2 px-2.5 py-1 rounded-full border text-[11px] font-mono tracking-tight transition-colors duration-300 {isSpikeActive
+			class="flex items-center gap-2 px-2.5 py-0.5 rounded-full border text-[11px] font-mono tracking-tight transition-colors duration-300 {isSpikeActive
 				? 'bg-amber-500/10 border-amber-500/30 text-amber-300'
 				: 'bg-emerald-500/10 border-emerald-500/25 text-emerald-400'}"
 		>
@@ -165,9 +165,9 @@
 	</div>
 
 	<!-- Central Architecture Pipeline Monitor -->
-	<div class="my-auto w-full max-w-sm mx-auto bg-[#181a20] border border-white/10 rounded-2xl p-5 sm:p-6 shadow-2xl relative overflow-hidden space-y-4">
+	<div class="my-auto w-full max-w-sm mx-auto bg-[#181a20] border border-white/10 rounded-2xl p-4 sm:p-4.5 shadow-2xl relative overflow-hidden space-y-2.5">
 		<!-- Partition & Cluster Meta -->
-		<div class="flex items-center justify-between pb-3 border-b border-white/5">
+		<div class="flex items-center justify-between pb-2 border-b border-white/5">
 			<div class="flex items-center gap-2">
 				<Cpu size={14} class="text-[#00c7be]" />
 				<span class="text-[11px] font-mono tracking-wider text-neutral-300 uppercase font-semibold">
@@ -183,12 +183,12 @@
 		<div class="flex items-baseline justify-between gap-2">
 			<div>
 				<div class="flex items-baseline gap-1.5">
-					<span class="text-2xl sm:text-3xl font-extrabold font-mono text-white tracking-tight tabular-nums transition-colors duration-200">
+					<span class="text-xl sm:text-2xl font-extrabold font-mono text-white tracking-tight tabular-nums transition-colors duration-200">
 						{currentThroughput.toLocaleString()}
 					</span>
 					<span class="text-xs font-semibold text-neutral-400 font-mono">msg/sec</span>
 				</div>
-				<p class="text-[11px] text-neutral-400 font-medium">Ingestion Rate Throughput</p>
+				<p class="text-[10px] sm:text-[11px] text-neutral-400 font-medium">Ingestion Rate Throughput</p>
 			</div>
 
 			<div class="text-right">
@@ -203,7 +203,7 @@
 		</div>
 
 		<!-- Dynamic SVG Sparkline Graph -->
-		<div class="w-full h-16 bg-[#101115] border border-white/5 rounded-xl relative overflow-hidden flex items-end">
+		<div class="w-full h-12 sm:h-13 bg-[#101115] border border-white/5 rounded-xl relative overflow-hidden flex items-end">
 			<svg
 				class="w-full h-full overflow-visible"
 				viewBox="0 0 360 64"
@@ -239,30 +239,30 @@
 		</div>
 
 		<!-- Secondary 4-Cell Telemetry Matrix -->
-		<div class="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-1">
-			<div class="p-2 rounded-lg bg-white/3 border border-white/5">
-				<p class="text-[10px] text-neutral-500 font-mono uppercase">p99 Latency</p>
+		<div class="grid grid-cols-2 sm:grid-cols-4 gap-1.5 pt-0.5">
+			<div class="p-1.5 sm:p-2 rounded-lg bg-white/3 border border-white/5">
+				<p class="text-[9px] sm:text-[10px] text-neutral-500 font-mono uppercase">p99 Latency</p>
 				<p class="text-xs font-mono font-bold text-neutral-200 tabular-nums">
 					{currentLatency}ms
 				</p>
 			</div>
 
-			<div class="p-2 rounded-lg bg-white/3 border border-white/5">
-				<p class="text-[10px] text-neutral-500 font-mono uppercase">Go Workers</p>
+			<div class="p-1.5 sm:p-2 rounded-lg bg-white/3 border border-white/5">
+				<p class="text-[9px] sm:text-[10px] text-neutral-500 font-mono uppercase">Go Workers</p>
 				<p class="text-xs font-mono font-bold text-neutral-200 tabular-nums">
 					{activeWorkers}/{activeWorkers}
 				</p>
 			</div>
 
-			<div class="p-2 rounded-lg bg-white/3 border border-white/5">
-				<p class="text-[10px] text-neutral-500 font-mono uppercase">Queue Lag</p>
+			<div class="p-1.5 sm:p-2 rounded-lg bg-white/3 border border-white/5">
+				<p class="text-[9px] sm:text-[10px] text-neutral-500 font-mono uppercase">Queue Lag</p>
 				<p class="text-xs font-mono font-bold {queueLag > 0 ? 'text-amber-400' : 'text-emerald-400'} tabular-nums">
 					{queueLag} msgs
 				</p>
 			</div>
 
-			<div class="p-2 rounded-lg bg-white/3 border border-white/5">
-				<p class="text-[10px] text-neutral-500 font-mono uppercase">Net I/O</p>
+			<div class="p-1.5 sm:p-2 rounded-lg bg-white/3 border border-white/5">
+				<p class="text-[9px] sm:text-[10px] text-neutral-500 font-mono uppercase">Net I/O</p>
 				<p class="text-xs font-mono font-bold text-neutral-200 tabular-nums">
 					{currentNetworkIO} GB/s
 				</p>
@@ -270,11 +270,11 @@
 		</div>
 
 		<!-- Action Controls -->
-		<div class="flex items-center gap-2 pt-2">
+		<div class="flex items-center gap-2 pt-1">
 			<!-- Traffic Spike Simulator Button -->
 			<button
 				type="button"
-				class="flex-1 py-2 px-3 rounded-xl text-xs font-semibold flex items-center justify-center gap-1.5 transition-all duration-200 border cursor-pointer active:scale-98 {isSpikeActive
+				class="flex-1 py-1.5 px-2.5 rounded-xl text-xs font-semibold flex items-center justify-center gap-1.5 transition-all duration-200 border cursor-pointer active:scale-98 {isSpikeActive
 					? 'bg-amber-500 hover:bg-amber-400 text-black border-amber-400 shadow-lg shadow-amber-500/25'
 					: 'bg-white/10 hover:bg-white/15 text-white border-white/10'}"
 				onclick={triggerTrafficSpike}
@@ -287,7 +287,7 @@
 			<!-- Inspect Architecture Case Study Button -->
 			<button
 				type="button"
-				class="py-2 px-3 rounded-xl text-xs font-semibold bg-[#101115] hover:bg-white/10 text-neutral-300 hover:text-white border border-white/10 flex items-center gap-1 transition-all duration-200 cursor-pointer active:scale-98"
+				class="py-1.5 px-2.5 rounded-xl text-xs font-semibold bg-[#101115] hover:bg-white/10 text-neutral-300 hover:text-white border border-white/10 flex items-center gap-1 transition-all duration-200 cursor-pointer active:scale-98"
 				onclick={handleInspectArchitecture}
 				title="View Event-Driven Architecture Case Study"
 			>

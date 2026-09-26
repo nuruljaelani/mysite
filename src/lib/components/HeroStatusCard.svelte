@@ -59,7 +59,7 @@
 	});
 </script>
 
-<div class="bento-card flex flex-col justify-between p-7 sm:p-8 min-h-[480px] h-full relative overflow-hidden group select-none">
+<div class="bento-card flex flex-col justify-between p-5 sm:p-6 min-h-90 xl:min-h-95 h-full relative overflow-hidden group select-none">
 	<!-- Top Tag: 0 -> 1 -->
 	<div class="relative z-20 flex items-center gap-2 text-neutral-400 text-xs font-mono font-medium tracking-wide">
 		<Monitor size={15} class="text-neutral-400" />
@@ -73,17 +73,17 @@
 	></canvas>
 
 	<!-- Center Title -->
-	<div class="relative z-20 my-auto text-center px-4 pt-4">
-		<h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-white leading-snug">
+	<div class="relative z-20 my-auto text-center px-3 pt-2">
+		<h2 class="text-xl sm:text-2xl font-bold tracking-tight text-white leading-snug">
 			Fullstack Software<br />Engineer - Systems
 		</h2>
-		<p class="text-xs sm:text-sm text-neutral-400 mt-2 font-medium tracking-wide max-w-xs mx-auto">
+		<p class="text-xs text-neutral-400 mt-1.5 font-medium tracking-wide max-w-xs mx-auto">
 			Architecting event-driven microservices, high-throughput APIs, and reactive web applications.
 		</p>
 	</div>
 
 	<!-- Bottom Skyline Graphic -->
-	<div class="relative w-full h-[220px] -mx-8 -mb-8 mt-auto overflow-hidden z-20 flex items-end">
+	<div class="relative w-full h-36 xl:h-40 -mx-6 -mb-6 mt-auto overflow-hidden z-20 flex items-end">
 		<!-- Skyline Image -->
 		<img
 			src="/images/skyline.jpg"
@@ -91,6 +91,6 @@
 			class="w-full h-full object-cover object-bottom filter brightness-110 contrast-115 group-hover:scale-105 transition-transform duration-700 ease-out"
 		/>
 		<!-- Seamless Top Gradient Mask -->
-		<div class="absolute inset-0 bg-gradient-to-t from-transparent via-[#141519]/70 to-[#141519] pointer-events-none"></div>
+		<div class="absolute inset-0 bg-linear-to-t from-transparent via-[#141519]/70 to-[#141519] pointer-events-none"></div>
 	</div>
 </div>

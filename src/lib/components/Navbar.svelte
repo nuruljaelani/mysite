@@ -76,7 +76,7 @@
 		<div class="flex items-center gap-2">
 			<!-- Velocity Tracker -->
 			<div
-				class="flex items-center justify-center bg-[#18191f] border border-white/10 rounded-full px-3.5 py-1 text-xs font-mono text-neutral-300 shadow-lg shadow-black/20 min-w-[70px]"
+				class="flex items-center justify-center bg-[#18191f] border border-white/10 rounded-full px-3.5 py-1 text-xs font-mono text-neutral-300 shadow-lg shadow-black/20 min-w-17.5"
 				title="Live scroll velocity"
 			>
 				<span>{Math.round(scrollVelocity)} px/s</span>

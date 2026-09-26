@@ -83,9 +83,9 @@
 	/>
 
 	<!-- Main Bento Grid Container -->
-	<main class="flex-1 max-w-[1600px] w-full mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6">
+	<main class="flex-1 max-w-[1600px] w-full mx-auto px-4 sm:px-6 lg:px-8 py-2.5 sm:py-4">
 		<div
-			class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-5 sm:gap-6 items-stretch transition-all duration-700 ease-out"
+			class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-4 sm:gap-5 xl:gap-6 items-stretch transition-all duration-700 ease-out"
 			style={activeMode === '3D'
 				? 'transform: perspective(1400px) rotateX(7deg) rotateY(-3deg) scale(0.96); transform-style: preserve-3d;'
 				: activeMode === 'VR'

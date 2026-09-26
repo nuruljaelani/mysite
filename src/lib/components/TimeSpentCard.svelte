@@ -105,7 +105,7 @@
 	}
 </script>
 
-<div class="bento-card flex flex-col justify-between p-7 sm:p-8 min-h-[480px] h-full relative overflow-hidden select-none group">
+<div class="bento-card flex flex-col justify-between p-5 sm:p-6 min-h-90 xl:min-h-95 h-full relative overflow-hidden select-none group">
 	<!-- Header -->
 	<div class="flex items-center gap-2 text-neutral-400 text-xs font-semibold tracking-wider uppercase">
 		<Clock size={14} class="text-neutral-400" />
@@ -113,21 +113,21 @@
 	</div>
 
 	<!-- Main Metric Counter -->
-	<div class="my-auto py-2 text-center flex flex-col items-center justify-center">
-		<div class="text-5xl sm:text-6xl font-light tracking-tight text-white font-['Outfit',sans-serif]">
+	<div class="my-auto py-1 text-center flex flex-col items-center justify-center">
+		<div class="text-4xl sm:text-5xl font-light tracking-tight text-white font-['Outfit',sans-serif]">
 			{currentHours}
 		</div>
-		<p class="text-xs sm:text-sm text-neutral-400 font-medium tracking-wide mt-1.5">
+		<p class="text-xs text-neutral-400 font-medium tracking-wide mt-1">
 			Total Engineering Hours
 		</p>
 		<!-- Active Milestone Pill on Drag/Hover -->
-		<div class="mt-3 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[11px] text-neutral-300 transition-all duration-300 max-w-[280px] truncate">
+		<div class="mt-2 px-2.5 py-0.5 rounded-full bg-white/5 border border-white/10 text-[10px] sm:text-[11px] text-neutral-300 transition-all duration-300 max-w-65 truncate">
 			<span class="text-white font-semibold">{currentMilestone.year}</span>: {currentMilestone.role} ({currentMilestone.city})
 		</div>
 	</div>
 
 	<!-- Rainbow Arc Gauge -->
-	<div class="relative w-full max-w-[320px] mx-auto mt-2 flex flex-col items-center">
+	<div class="relative w-full max-w-65 sm:max-w-70 mx-auto mt-1 flex flex-col items-center">
 		<!-- SVG Arc -->
 		<svg
 			id="arc-gauge-svg"
@@ -197,12 +197,12 @@
 		</svg>
 
 		<!-- Year & City Labels Below the Arc -->
-		<div class="w-full flex items-center justify-between px-3 -mt-3 text-xs">
-			<span class="text-xl sm:text-2xl font-bold text-white tracking-tight">2018</span>
-			<span class="text-[10px] sm:text-xs font-semibold text-neutral-400 tracking-widest uppercase">
+		<div class="w-full flex items-center justify-between px-2 -mt-3 text-xs">
+			<span class="text-base sm:text-lg font-bold text-white tracking-tight">2018</span>
+			<span class="text-[9px] sm:text-[10px] font-semibold text-neutral-400 tracking-widest uppercase">
 				CIREBON &nbsp; JAKARTA &nbsp; REMOTE
 			</span>
-			<span class="text-xl sm:text-2xl font-bold text-white tracking-tight">2026</span>
+			<span class="text-base sm:text-lg font-bold text-white tracking-tight">2026</span>
 		</div>
 	</div>
 </div>

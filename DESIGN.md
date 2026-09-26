@@ -75,10 +75,11 @@ Dials: `DESIGN_VARIANCE: 8`, `MOTION_INTENSITY: 7`, `VISUAL_DENSITY: 5`.
 
 ## Layout
 - Top floating navigation bar: `sticky top-0 z-40` with frosted glass backdrop blur (`bg-white/80 backdrop-blur-md`), keeping pill selectors (Mode, Tabs, Velocity, Sound, Avatar) always accessible during scroll.
-- Bento Grid: 12-column grid layout spanning up to 1600px width with generous card dimensions:
+- Bento Grid: 12-column grid layout spanning up to 1600px width with balanced viewport-friendly card dimensions:
   - Row 1: Profile Card (3 cols / 25%), Engineering Time Spent (3 cols / 25%), Tech Stack & Architecture (6 cols / 50%).
-  - Row 2: Hero Status Card (4 cols / 33.3%), The Pragmatic Engineer Audio (4 cols / 33.3%), Experience Globe (4 cols / 33.3%).
-- Tactile internal padding: 28px-32px per card with distinct internal hierarchies.
+  - Row 2: Hero Status Card (4 cols / 33.3%), System Telemetry (4 cols / 33.3%), Experience Globe (4 cols / 33.3%).
+- Tactile internal padding: 20px-24px per card (compacted from 32px to comfortably fit laptop browser viewports without excessive vertical scrolling).
+- Card min-height: 360px - 380px (optimized for 768p/900p/1080p laptop displays).
 
 ## Elevation & Depth
 - Cards lift with smooth cubic-bezier transitions on hover (`translateY(-2px)`).

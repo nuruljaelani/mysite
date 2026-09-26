@@ -11,26 +11,26 @@
 	}
 </script>
 
-<div class="bento-card flex flex-col justify-between p-7 sm:p-8 min-h-[480px] h-full relative overflow-hidden group select-none">
+<div class="bento-card flex flex-col justify-between p-5 sm:p-6 min-h-90 xl:min-h-95 h-full relative overflow-hidden group select-none">
 	<!-- Top Header -->
-	<div class="flex items-center gap-2 text-neutral-400 text-xs font-semibold tracking-wider uppercase mb-3">
+	<div class="flex items-center gap-2 text-neutral-400 text-xs font-semibold tracking-wider uppercase mb-1.5">
 		<BarChart3 size={14} class="text-neutral-400" />
 		<span>TECH STACK & ARCHITECTURE</span>
 	</div>
 
 	<!-- Skills & Tools Grid -->
-	<div class="grid grid-cols-12 gap-x-4 gap-y-1 text-xs sm:text-[13px] my-auto">
+	<div class="grid grid-cols-12 gap-x-4 gap-y-0.5 text-xs sm:text-[12.5px] my-auto">
 		<!-- Column Headers -->
-		<div class="col-span-8 flex justify-between text-[11px] font-bold text-neutral-500 uppercase tracking-wider pb-1">
+		<div class="col-span-8 flex justify-between text-[10px] sm:text-[11px] font-bold text-neutral-500 uppercase tracking-wider pb-1">
 			<span class="w-1/2">BACKEND & SYSTEMS</span>
 			<span class="w-1/2 pl-2">FRONTEND & DEVOPS</span>
 		</div>
-		<div class="col-span-4 text-right text-[11px] font-bold text-neutral-500 uppercase tracking-wider pb-1">
+		<div class="col-span-4 text-right text-[10px] sm:text-[11px] font-bold text-neutral-500 uppercase tracking-wider pb-1">
 			<span>TOOLING</span>
 		</div>
 
 		<!-- Skills Column 1 (col-span-4) -->
-		<div class="col-span-4 space-y-1.5">
+		<div class="col-span-4 space-y-1">
 			{#each skillsCol1 as skill}
 				<div class="flex items-center justify-between pr-2 py-0.5 rounded transition-colors duration-150 text-neutral-300 hover:text-white hover:bg-white/10">
 					<span class="truncate max-w-[160px] xl:max-w-[210px]" title={skill.name}>{skill.name}</span>
@@ -42,7 +42,7 @@
 		</div>
 
 		<!-- Skills Column 2 (col-span-4) -->
-		<div class="col-span-4 space-y-1.5">
+		<div class="col-span-4 space-y-1">
 			{#each skillsCol2 as skill}
 				<div class="flex items-center justify-between px-2 py-0.5 rounded transition-colors duration-150 text-neutral-300 hover:text-white hover:bg-white/10">
 					<span class="truncate max-w-[160px] xl:max-w-[210px]" title={skill.name}>{skill.name}</span>
@@ -54,7 +54,7 @@
 		</div>
 
 		<!-- Tools Column (col-span-4) -->
-		<div class="col-span-4 space-y-1.5 text-right pl-2">
+		<div class="col-span-4 space-y-1 text-right pl-2">
 			{#each toolsList as tool}
 				<div
 					class="py-0.5 text-neutral-400 hover:text-white transition-colors duration-150 truncate cursor-default"
@@ -67,8 +67,8 @@
 	</div>
 
 	<!-- Bottom Botanical Garden Row of Flowers -->
-	<div class="relative w-full pt-4 mt-2 border-t border-white/5 flex items-end justify-between overflow-visible">
-		<div class="flex items-end gap-2 sm:gap-3 xl:gap-4 overflow-x-visible">
+	<div class="relative w-full pt-2 mt-1 border-t border-white/5 flex items-end justify-between overflow-visible">
+		<div class="flex items-end gap-2 sm:gap-3 xl:gap-4 overflow-x-visible scale-85 origin-bottom-left">
 			<!-- Flower 1: Orange 5-petal star -->
 			<div class="group/fl cursor-pointer transition-transform duration-300 hover:-translate-y-2 hover:rotate-3">
 				<svg width="42" height="64" viewBox="0 0 42 64" fill="none">

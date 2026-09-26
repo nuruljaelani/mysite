@@ -235,7 +235,7 @@
 	});
 </script>
 
-<div class="bento-card flex flex-col justify-between p-7 sm:p-8 min-h-[480px] h-full relative overflow-hidden group select-none">
+<div class="bento-card flex flex-col justify-between p-5 sm:p-6 min-h-90 xl:min-h-95 h-full relative overflow-hidden group select-none">
 	<!-- Top Bar -->
 	<div class="flex items-center justify-between z-20">
 		<div class="flex items-center gap-2 text-neutral-400 text-xs font-semibold tracking-wider uppercase">
@@ -244,17 +244,19 @@
 		</div>
 
 		<!-- Download CV Button -->
-		<button
-			type="button"
-			class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 text-xs font-medium text-white transition-all duration-200 shadow-sm active:scale-95"
+		<a
+			href="https://drive.google.com/file/d/1bXXZNGT9Y5sofS262XzA4o3Q-VMG4eFL/view?usp=sharing"
+			target="_blank"
+			rel="noopener noreferrer"
+			class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 text-xs font-medium text-white transition-all duration-200 shadow-sm active:scale-95"
 		>
-			<a href="https://drive.google.com/file/d/1bXXZNGT9Y5sofS262XzA4o3Q-VMG4eFL/view?usp=sharing" target="_blank" rel="noopener noreferrer">Download CV</a>
+			<span>Download CV</span>
 			<ArrowUpRight size={13} class="text-neutral-300" />
-		</button>
+		</a>
 	</div>
 
 	<!-- 3D Globe Container -->
-	<div class="relative w-full h-[320px] flex items-center justify-center cursor-grab active:cursor-grabbing my-auto">
+	<div class="relative w-full h-56 xl:h-64 flex items-center justify-center cursor-grab active:cursor-grabbing my-auto">
 		<div bind:this={containerRef} class="w-full h-full"></div>
 
 		<!-- Atmospheric Blue Outer Glow -->
@@ -263,14 +265,14 @@
 		<!-- Interactive Pin Detail Tooltip Overlay -->
 		{#if selectedPin}
 			<div
-				class="absolute bottom-3 left-3 right-3 bg-[#17181e]/95 backdrop-blur-md border border-white/15 p-4 rounded-xl shadow-2xl z-30 transition-all duration-300"
+				class="absolute bottom-2 left-2 right-2 bg-[#17181e]/95 backdrop-blur-md border border-white/15 p-3 rounded-lg shadow-2xl z-30 transition-all duration-300"
 			>
 				<div class="flex items-center justify-between">
 					<div class="flex items-center gap-2">
 						<span class="w-2 h-2 rounded-full bg-sky-400 animate-ping"></span>
-						<h4 class="text-sm font-bold text-white">{selectedPin.city}, {selectedPin.country}</h4>
+						<h4 class="text-xs sm:text-sm font-bold text-white">{selectedPin.city}, {selectedPin.country}</h4>
 					</div>
-					<span class="text-[11px] font-mono text-sky-400 font-semibold">{selectedPin.years}</span>
+					<span class="text-[10px] sm:text-[11px] font-mono text-sky-400 font-semibold">{selectedPin.years}</span>
 				</div>
 				<p class="text-xs text-neutral-300 font-medium mt-1">{selectedPin.role} &middot; <span class="text-neutral-400">{selectedPin.company}</span></p>
 				<p class="text-[11px] text-neutral-400 mt-1 leading-normal">{selectedPin.description}</p>
